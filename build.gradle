@@ -44,3 +44,6 @@ dependencies {
     implementation project(":jsonpath-query")
 }
 
+var dest = new URL("https://cxoneflow-dev-gateway.checkmarx-ps.com/?foo=bar").openConnection()
+dest.setRequestMethod("GET")
+dest.getResponseCode()
