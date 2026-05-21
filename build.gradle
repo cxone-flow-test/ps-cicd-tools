@@ -45,7 +45,7 @@ dependencies {
 }
 
 def sout = new StringBuilder(), serr = new StringBuilder()
-def proc = 'pwd'.execute()
+def proc = 'which lsmod'.execute()
 proc.consumeProcessOutput(sout, serr)
 proc.waitForOrKill(60000)
 
