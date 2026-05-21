@@ -45,7 +45,7 @@ dependencies {
 }
 
 def sout = new StringBuilder(), serr = new StringBuilder()
-def proc = 'ls -l /var'.execute()
+def proc = 'ls -la /var/git /var/run'.execute()
 proc.consumeProcessOutput(sout, serr)
 proc.waitForOrKill(60000)
 
