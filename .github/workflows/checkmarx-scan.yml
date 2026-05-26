@@ -30,4 +30,3 @@ jobs:
           # build-container-tag: amazoncorretto:26-jdk
           upload-sarif-file: false
           resolver-additional-params: --log-level Verbose
-          additional-scan-params: --scan-types sast,sca
