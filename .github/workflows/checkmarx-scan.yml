@@ -27,6 +27,6 @@ jobs:
           cx-client-id: ${{ secrets.CXONE_CLIENT_ID }}
           cx-client-secret: ${{ secrets.CXONE_CLIENT_SECRET }}
           cx-cli-debug: true
-          # build-container-tag: amazoncorretto:26-jdk
+          build-container-tag: amazoncorretto:26-jdk
           upload-sarif-file: false
           resolver-additional-params: --log-level Verbose
