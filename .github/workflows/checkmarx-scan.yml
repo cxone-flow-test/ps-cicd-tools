@@ -29,4 +29,4 @@ jobs:
           cx-cli-debug: true
           build-container-tag: amazoncorretto:26-jdk
           upload-sarif-file: false
-          # cx-cli-additional-params: --sca-resolver-params '--log-level Verbose'
+          resolver-additional-params: --log-level Verbose
