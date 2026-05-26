@@ -20,9 +20,9 @@ jobs:
   
       - name: Scan with CxOne++ Action
         id: scan
-        uses: checkmarx-ts/cxone-plusplus-github-action@v2
+        uses: checkmarx-ts/cxone-plusplus-github-action@maintenance
         with:
-          cx-tenant: ${{ secrets.CXONE_TENANT }}
+          cx-tenant: ${{ vars.CXONE_TENANT }}
           cx-client-id: ${{ secrets.CXONE_CLIENT_ID }}
           cx-client-secret: ${{ secrets.CXONE_CLIENT_SECRET }}
           cx-cli-debug: true
